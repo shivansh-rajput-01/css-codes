@@ -1,0 +1,8 @@
+div{
+    background-color: rgb(220, 228, 74);
+}
+/* the color is inherited by the child of div also but not by input and button  */
+/* for button and input inherit background color we use the following */
+input,button{
+    background-color: inherit;
+}

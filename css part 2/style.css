@@ -1,0 +1,78 @@
+/* Universal selector */
+* {
+  font-family: "Courier New";
+}
+
+/* Element selector */
+h1 {
+  color: #b92b27;
+  letter-spacing: 2px;
+}
+
+/* ID selector */
+#login {
+  background-color: white;
+}
+
+#signup {
+  background-color: #b92b27;
+  color: white;
+}
+
+/* Class selector */
+.redbtn {
+  background-color: #b92b27;
+  color: white;
+}
+
+/* Descendant selector */
+nav a {
+  text-decoration: none;
+  color: #b92b27;
+  font-weight: bold;
+}
+
+/* child combinator */
+nav > ul > li {
+  list-style: none;
+}
+
+/* Adjacent sibling combinator */
+/* applies to sibling buttons of class redbtn */
+.redbtn + button {
+  color: aliceblue;
+  background-color: green;
+}
+
+/* pseudo class */
+/* active,nth-of-type,checked are some other */
+div:hover {
+  background-color: antiquewhite;
+}
+
+/* pseudo element */
+/* first-letter,first-line are some other */
+p::selection {
+  background-color: black;
+  color: red;
+}
+
+/* specificity in css */
+/* id > class > element */
+/* for example we have given backround color white using id selector #b92b27, if we try to give #b92b27 background using cl class on login then it will not be applied */
+.cl {
+  background-color: #b92b27;
+  color: white;
+}
+/* in css cascading means that if same specificity selectors are given same property values different times then the last specified value is applied */
+/* we can give a style using inline css but it is not preferred as it is more powerful then id selector */
+/* !important is used to specify a style which is of utmost priority */
+.cl {
+  background-color: #b92bff !important;
+}
+
+/* changing input field color */
+input {
+  background-color: black;
+  color: red;
+}
