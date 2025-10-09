@@ -1,0 +1,5 @@
+li{
+    display: inline;
+}
+/* By default, list items (li) are rendered as display: list-item, which shows the normal bullet point. */
+/* When we change to display: inline;, list items behave like regular inline text elements, and the browser no longer shows the bullet marker that is characteristic of list items. */
