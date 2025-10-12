@@ -1,0 +1,36 @@
+.box{
+    color: aliceblue;
+    background-color: blueviolet;
+    height: 80px;
+    width: 20%;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+/* transition is a shorthand for transition-property, transition-duration, transition-timing-function, transition-delay */
+#b1{
+    transition: width 2s linear 2s, height 2s linear 0s, border-radius 2s linear 4s;
+}
+
+#b2{
+    transition: width 2s steps(5) 2s, height 2s steps(5) 0s, border-radius 2s steps(5) 4s;
+}
+
+#b3{
+    transition: width 2s ease-in 2s, height 2s ease-in 0s, border-radius 2s ease-in 4s;
+}
+
+#b4{
+    transition: width 2s ease-out 2s, height 2s ease-out 0s, border-radius 2s ease-out 4s, margin-top 4s ease-out 6s;
+}
+
+#b1:hover,#b2:hover,#b3:hover,#b4:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#b4:hover{
+    margin-top:105vh;
+}

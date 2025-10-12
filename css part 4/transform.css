@@ -1,0 +1,33 @@
+section{
+    margin: 200px;
+}
+
+.box{
+    height: 50px;
+    width: 200px;
+    margin: 10px auto;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
+    text-align: center;
+}
+
+#b1{
+    transform: rotate(45deg);
+}
+
+#b2{
+    transform: scale(0.5);
+}
+
+#b3{
+    transform: translate(100px,-200px);
+}
+
+#b4{
+    transform: skew(30deg);
+}
+
+#b5{
+    transform: rotate(45deg) translateX(100px);
+}
