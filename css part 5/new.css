@@ -1,0 +1,29 @@
+.top{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    width: 150px;
+    max-height: 52px;
+    overflow: hidden;
+    animation: widthAnimate 5s steps(11) 1s infinite alternate;
+}
+
+@keyframes widthAnimate{
+    0%{
+        width: 150px;
+    }
+    25%{
+        width: 110px;
+    }
+    50%{
+        width: 70px;
+    }
+    75%{
+        width: 30px;
+    }
+    100%{
+        width: 0px;
+    }
+}

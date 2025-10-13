@@ -1,0 +1,252 @@
+body{
+    background-color: black;
+    animation: dayNightAnimate 15s ease-in-out 2s infinite alternate;
+}
+
+.sun{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 14px 16px 38px gold;
+    position: fixed;
+    top: -120px;
+    right: 10px;
+    animation: sunAnimate 15s linear 2s infinite alternate;
+}
+
+.bounce{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    animation: bounceAnimate 15s ease-in-out 2s infinite alternate;
+}
+
+.lines{
+    width: 60px;
+    height: 5px;
+    background-color: blueviolet;
+}
+
+body .lines:nth-child(1){
+    position: fixed;
+    top: 18.5vh;
+    left: 10vw;
+}
+body .lines:nth-child(2){
+    position: fixed;
+    top: 28.5vh;
+    left: 20vw;
+}
+body .lines:nth-child(3){
+    position: fixed;
+    top: 38.5vh;
+    left: 30vw;
+}
+body .lines:nth-child(4){
+    position: fixed;
+    top: 48.5vh;
+    left: 40vw;
+}
+body .lines:nth-child(5){
+    position: fixed;
+    top: 58.5vh;
+    left: 50vw;
+}
+body .lines:nth-child(6){
+    position: fixed;
+    top: 68.5vh;
+    left: 60vw;
+}
+body .lines:nth-child(7){
+    position: fixed;
+    top: 78.5vh;
+    left: 70vw;
+}
+body .lines:nth-child(8){
+    position: fixed;
+    top: 88.5vh;
+    left: 80vw;
+}
+body .lines:nth-child(9){
+    position: fixed;
+    top: 98.5vh;
+    left: 90vw;
+}
+
+@keyframes bounceAnimate{
+    0%{
+        transform: translateY(0vh) translateX(-10vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    10%{
+        transform: translateY(10vh) translateX(10vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    15%{
+        transform: translateY(4vh) translateX(14vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    20%{
+        transform: translateY(20vh) translateX(20vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    25%{
+        transform: translateY(14vh) translateX(24vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    30%{
+        transform: translateY(30vh) translateX(30vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    35%{
+        transform: translateY(24vh) translateX(34vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    40%{
+        transform: translateY(40vh) translateX(40vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    45%{
+        transform: translateY(34vh) translateX(44vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    50%{
+        transform: translateY(50vh) translateX(50vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    55%{
+        transform: translateY(44vh) translateX(54vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    60%{
+        transform: translateY(60vh) translateX(60vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    65%{
+        transform: translateY(54vh) translateX(64vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    70%{
+        transform: translateY(70vh) translateX(70vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    75%{
+        transform: translateY(64vh) translateX(74vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    80%{
+        transform: translateY(80vh) translateX(80vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    85%{
+        transform: translateY(74vh) translateX(84vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    90%{
+        transform: translateY(90vh) translateX(90vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    95%{
+        transform: translateY(84vh) translateX(94vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+    100%{
+        transform: translateY(100vh) translateX(100vw);
+        background-color: blueviolet;
+        box-shadow: 2px 4px 16px rgb(90, 90, 173);
+    }
+}
+
+@keyframes dayNightAnimate{
+    0%{        
+        background-color: black;
+    }
+    10%{        
+        background-color: black;
+    }
+    20%{        
+        background-color: rgb(17, 16, 16);
+    }
+    30%{        
+        background-color: rgb(7, 6, 37);
+    }
+    40%{        
+        background-color: rgb(8, 6, 51);
+    }
+    50%{        
+        background-color: rgb(65, 64, 100);
+    }
+    60%{        
+        background-color: rgb(171, 173, 213);
+    }
+    70%{        
+        background-color: white;
+    }
+    80%{        
+        background-color: aliceblue;
+    }
+    90%{        
+        background-color: aliceblue;
+    }
+    100%{        
+        background-color: aliceblue;
+    }
+}
+
+@keyframes sunAnimate{
+    0%{        
+        top: -120px;
+    }
+    10%{        
+        top: -120px;
+    }
+    20%{        
+        top: -120px;
+    }
+    30%{        
+        top: -120px;
+    }
+    40%{        
+        top: -110px;
+    }
+    50%{        
+        top: -100px;
+    }
+    60%{        
+        top: -50px;
+    }
+    70%{        
+        top: 0px;
+    }
+    80%{        
+        top: 10px;
+    }
+    90%{        
+        top: 20px;
+    }
+    100%{        
+        top: 30px;
+    }
+}
+

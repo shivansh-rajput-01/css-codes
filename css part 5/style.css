@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+    /* grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: auto auto; */
+    /* auto two times divides available container width into two equal size grid columns generally but not always as id grid items have content and size of content will decide the behaviour of auto property*/
+    grid-template-rows: repeat(5,1fr);
+    /* above same as grid-template-rows: 1fr 1fr 1fr fr 1fr;*/
+    grid-template-columns: repeat(3,1fr);
+    /* row-gap: 10px;
+    column-gap: 20px; */
+    grid-gap: 10px;
+    justify-items: center; /*horizontal */
+    align-items: center; /*vertical*/
+    /* place-items: start; */
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(155, 236, 33);
+    border: 2px solid black;
+    text-align: center;
+}
+
+.one{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* we define column line number */
+    /* grid-column: 1/4; */
+    grid-column: 1/span 3;
+    place-self: start; /* gives both align-self and justify-self*/
+}
+
+.two{
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-row: 1/3; */
+    grid-row: 1/span 2;
+}
